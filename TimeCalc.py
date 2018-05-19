@@ -7,11 +7,12 @@ print("Calculating Durations")
 
 clear = True
 while clear == True:
-    # first input
+    # first input; clear
     firstNumber = True
     while firstNumber == True:
         time_1 = input("Please enter a time [hh:mm:ss] including 0s: ")
         if len(time_1) >= 8 and time_1[-6] == ":" and time_1[-3] == ":" and int(time_1[-5:-3]) < 60 and int(time_1[-2:]) < 60:
+            # within if statement or letters aren't invalid and crash program
             hours_1 = int(time_1[:-6])
             minutes_1 = int(time_1[-5:-3])
             seconds_1 = int(time_1[-2:])
@@ -22,11 +23,12 @@ while clear == True:
 
     cont = True
     while cont == True:
-        # second input
+        # second input; continue
         secondNumber = True
         while secondNumber == True:
             time_2 = input("Please enter a time to add [hh:mm:ss] including 0s: ")
             if len(time_2) >= 8 and time_2[-6] == ":" and time_2[-3] == ":" and int(time_2[-5:-3]) < 60 and int(time_2[-2:]) < 60:
+                # within if statement or letters aren't invalid and crash program
                 hours_2 = int(time_2[:-6])
                 minutes_2 = int(time_2[-5:-3])
                 seconds_2 = int(time_2[-2:])
