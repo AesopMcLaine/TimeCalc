@@ -2,8 +2,8 @@ import datetime
 from datetime import timedelta
 
 # intro
-print("Welcome to TimeCalc"
-      "Calculating Durations")
+print("Welcome to TimeCalc")
+print("Calculating Durations")
 
 clear = True
 while clear == True:
